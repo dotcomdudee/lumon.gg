@@ -1,50 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon-64.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta property="og:title" content="Lumon Macrodata Refiner" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://lumon.gg/" />
-    <meta property="og:image:url" content="https://cdn.firebase-ssl.com/files/86460/og-image_1740425888.jpg" />
-    <meta property="og:image:secure_url" content="https://cdn.firebase-ssl.com/files/86460/og-image_1740425888.jpg" />
-    <meta property="og:description" content="An interactive macrodata refiner! ✨" />
-    <meta
-      name="description"
-      content="An interactive macrodata refiner! ✨"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon-192.png" />
-    <script defer src="https://track37.com/script.js" data-website-id="ba7d15b9-2112-47b3-aa27-b705066ad99f"></script>
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Lumon.gg</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+   <head>
+      <meta charset="utf-8" />
+      <link rel="icon" href="%PUBLIC_URL%/favicon-64.png" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="theme-color" content="#000000" />
+      <meta property="og:title" content="Lumon Macrodata Refiner" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://lumon.gg/" />
+      <meta property="og:image:url" content="https://cdn.firebase-ssl.com/files/86460/og-image_1740425888.jpg" />
+      <meta property="og:image:secure_url" content="https://cdn.firebase-ssl.com/files/86460/og-image_1740425888.jpg" />
+      <meta property="og:description" content="An interactive macrodata refiner! ✨" />
+      <meta
+         name="description"
+         content="An interactive macrodata refiner! ✨"
+         />
+      <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon-192.png" />
+      <script defer src="https://track37.com/script.js" data-website-id="ba7d15b9-2112-47b3-aa27-b705066ad99f"></script>
+      <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+      <title>Lumon.gg</title>
+      <style>
+         @font-face {
+         font-family: 'Lumon Industries';
+         src: url('data:font/woff2;charset=utf-8;base64,d09GMgABAAAAAAMcAA4AAAAABkgAAALJAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGhYbIBwwBmAARBEICoJAghkLFAABNgIkAyQEIAWEFgc8GxoFyB6D426JpYgoIto/X8Zdy3PqEVRr//bsHX/AAD+wAdZIQgKpVDSTcHHADo0hYYGES+y/nx+X798NZDzAMxJ0VttcLw0MxehrQl6i87/fbeKa/N8gD9hCkeL/C8CIBl/TNAp4QBPN4qLdaPg0ndIGtkv08/PKAgKjgCSEWgi0lsqAduwqqYEgOXQAgdZKeNi438WdcJo0kHGmxaKDjHSA43l5IG1BQbEhP8QjPZRg56dTJwAIVLhHfACmoKe27JwDX0tJDywAxL/kA3owSMgwCyugW/ysBWq1hJ5ytR30lOBf0v221i0KAERHAg2YBkocBh4AkAOAEEIS5Vg7OR53McjNddHtdIc7RwPPta4yjAQCveCTw8eQXzsKmX5wgorrp6Hnrx2HPjxF1+uaTmoajtyh5WqsxMJTqAt+1ZLnBXWVRHjq6AEUeyTfLsDH3uE33KXz37MlPc+c/pTXlp4u4Jv/FhQ+z80JsdKwCGt4A9q7PhZM7q1P+aYU7vTC5P7GpO+K6Flq7/ZuX8/OXk87vepqgFBPuOgWWiV43zal2jI3dbA+dSdclzQ3yhfk8Fsk6wIACASPjQGOI5Hc/0GhNfh2aCOGXEX/b/hnzFnVQUNeIZi21NinGFwTIIK+8aezDaDawF0/u1i9u1iD07VIJ4TGTv4gIQS2AMC0GwGYAgKESdEQSHJ9CGSWyIdAHk8WFhKSpUkN/MnoVBmrsCJvMNBtk6FniExqb8jMZgvjOUQW1rolS71I4k9GpqDgSu6fE6dKrFq97oNzz7nICOmv5txClBPFw/mPG77oFrlMVKy0OLqmsRy00TNwMlHq0s0ii5aSmZmSTpcSVlp6OlkK6bSzMrMwUepgJqan0Y4EjygSHFnjnJzSuJY6HUzq8ZbeWcI6ORmRYkqW0MHKymIIhnMjcNqsBhFJZg0zn4SMWVnPKolEohQAAA==') format('woff2');
+         font-weight: bold;
+         font-style: normal;
+         font-display: swap;
+         }
+      </style>
+   </head>
+   <body>
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+      <div id="root"></div>
+   </body>
 </html>
